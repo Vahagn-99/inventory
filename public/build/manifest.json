@@ -1,0 +1,21 @@
+{
+  "front-end/main.css": {
+    "file": "assets/main-96c8df39.css",
+    "src": "front-end/main.css"
+  },
+  "front-end/main.js": {
+    "assets": [
+      "assets/logo-71c05019.jpg"
+    ],
+    "css": [
+      "assets/main-96c8df39.css"
+    ],
+    "file": "assets/main-e2a0bb02.js",
+    "isEntry": true,
+    "src": "front-end/main.js"
+  },
+  "public/images/logo.jpg": {
+    "file": "assets/logo-71c05019.jpg",
+    "src": "public/images/logo.jpg"
+  }
+}
