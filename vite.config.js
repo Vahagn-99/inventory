@@ -6,7 +6,7 @@ import path from 'path';
 export default defineConfig({
     plugins: [
         laravel({
-            input: ['vue/main.js'],
+            input: ['front-end/main.js'],
             refresh: true,
         }),
         vue({
@@ -20,7 +20,7 @@ export default defineConfig({
     ],
     resolve: {
         alias: {
-            '@': path.resolve(__dirname, 'vue'), // Assuming your Vue code is in a 'vue' directory
+            '@': path.resolve(__dirname, 'front-end'), // Assuming your Vue code is in a 'front-end' directory
         },
     },
 });
