@@ -38,7 +38,7 @@ class UserInvitationMail extends Mailable
     public function content(): Content
     {
         return new Content(
-            markdown: 'emails.admins.invitation',
+            view: 'emails.admins.invitation',
             with: [
                 'name' => $this->user->name,
                 'registrationLink' => url('/api/login'),
