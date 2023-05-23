@@ -20,6 +20,11 @@ export function getHeaders() {
 }
 
 export async function post(url, data) {
+    try {
+        
+    } catch (error) {
+        
+    }
     const response = await axios.post(url, data, { headers: getHeaders() });
     return response.data;
 }
