@@ -54,22 +54,22 @@
 </head>
 
 <body>
-    <div class="container">
-        <h1>Բարև, {{ $name }}</h1>
+<div class="container">
+    <h1>Բարև, {{ $name }}</h1>
 
-        <p>Ջեր ներկայիս գաղտնաբառն է "password" դուք կարող եք փոխել այն մուտք գործելուց հետո։</p>
+    <p>Ջեր ներկայիս գաղտնաբառն է "{{$password}}" դուք կարող եք փոխել այն մուտք գործելուց հետո։</p>
 
-        <p>Խնդրում եմ սեղմել ներքևի հղումը ձեր գրանցումը ավարտելու համար՝</p>
+    <p>Խնդրում եմ սեղմել ներքևի հղումը ձեր գրանցումը ավարտելու համար՝</p>
 
-        <p>
-            <a href="{{ $registrationLink }}" class="button">Հաստատել</a>
-        </p>
+    <p>
+        <a href="{{ $registrationLink }}" class="button">Հաստատել</a>
+    </p>
 
-        <div class="signature">
-            <p>Շնորհակալություն,</p>
-            <p>{{ config('app.name') }}</p>
-        </div>
+    <div class="signature">
+        <p>Շնորհակալություն,</p>
+        <p>{{ config('app.name') }}</p>
     </div>
+</div>
 </body>
 
 </html>
