@@ -17,7 +17,7 @@ class UserInvitationMail extends Mailable
     /**
      * Create a new message instance.
      */
-    public function __construct(readonly private User $user)
+    public function __construct(readonly private User $user, readonly private string $password)
     {
 
     }
@@ -41,6 +41,7 @@ class UserInvitationMail extends Mailable
             view: 'emails.admins.invitation',
             with: [
                 'name' => $this->user->name,
+                'password' => $this->password,
                 'registrationLink' => url('/api/login'),
             ]
         );
