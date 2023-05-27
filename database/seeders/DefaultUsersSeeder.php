@@ -18,7 +18,7 @@ class DefaultUsersSeeder extends Seeder
         $admin = User::factory()
             ->create([
                 'name' => 'admin'
-                , 'email' => 'admin@inventroy.com'
+                , 'email' => 'admin@inventory.com'
                 , 'password' => Hash::make('password')
             ]);
         $admin->assignRole('admin');
@@ -27,7 +27,7 @@ class DefaultUsersSeeder extends Seeder
         $super = User::factory()
             ->create([
                 'name' => 'super admin'
-                , 'email' => 'super@inventroy.com'
+                , 'email' => 'super_admin@inventory.com'
                 , 'password' => Hash::make('password')
             ]);
         $super->assignRole('super-admin');
